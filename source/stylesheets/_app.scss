@@ -1,3 +1,62 @@
 @import 'vendor/0-dir';
 @import 'modules/0-dir';
 @import 'layouts/0-dir';
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.u-header {
+	padding: 25px 0;
+	text-align: center;
+	color: #fff;
+	background-color: #555;
+	h2 {
+		margin: 0;
+	}
+	@media (min-width: 640px) {
+		padding: 55px 0;
+	}
+}
+
+form {
+	width: 100%;
+	text-align: center;
+	margin: 25px 0;
+	label {
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-bottom: 8px;
+		text-align: left;
+	}
+	input {
+		width: 100%;
+		box-sizing:border-box;
+	}
+	input[type="email"] {
+		border-radius: 3px;
+		&:focus {
+			outline: none;
+			-webkit-appearance: none;
+			border: 1px solid #888;
+		}
+	}
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
